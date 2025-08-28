@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMC</title>
+</head>
+
+<body>
+  <h1 style="text-align: center; text-decoration: underline;">Calculadora de IMC</h1>
+  <p>
+    Aplicação capaz de efetuar o calculo de IMC(Indice de massa corporal) do usuário.
+  </p>
+  <script>
+
+    //Declarações de variaveis necessarias
+    var name = prompt("Digite seu nome:");
+    var altura = prompt("Digite sua altura(cm):");
+    var peso = prompt("Digite seu peso(kg):");
+
+    //converter dados de altura e peso com parseFloat
+    altura = parseFloat(altura);
+    peso = parseFloat(peso);
+
+    //Convertendo a altura de cm para metros
+    altura = altura / 100;
+    //alert("Sua altura convertida para metros fica: " + altura + "")
+
+    //declarando variavel imc para calculo de indice de massa corporal
+    var imc = peso / (altura * altura);
+    //alert("Seu IMC é de: " + m +"")
+
+    //teste condicional para identificar classificação
+    var classificacao = "";
+
+    if (imc < 16) {
+      classificacao = "Baixo peso muito grave.";
+
+    } else if (imc >= 16 && imc <= 16.99) {
+      classificacao = "Baixo peso grave.";
+
+    } else if (imc >= 17 && imc <= 18.49) {
+      classificacao = "Baixo peso.";
+
+    } else if (imc >= 18, 50 && imc <= 24.99) {
+      classificacao = "Peso normal.";
+
+    } else if (imc >= 25 && imc <= 29.99) {
+      classificacao = "Sobre peso.";
+
+    } else if (imc >= 30 && imc <= 34.99) {
+      classificacao = "Obesidade grau I.";
+
+    } else if (imc >= 35 && imc <= 39.99) {
+      classificacao = "Obesidade grau II.";
+
+    } else {
+      classificacao = "Obesidade grau III.";
+    }
+
+    document.write(name + " possui índice de massa corporal igual a " + imc + ", sendo classificado como: " + classificacao);
+
+  </script>
+
+  <br>
+  <br>
+  <a href="index.html">Voltar</a>
+</body>
+
+</html>

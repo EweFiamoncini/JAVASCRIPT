@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opreadores Lógicos</title>
+  <script>
+    /*
+    //true && true = true
+    if (2 == 2 && 3 >= 1) {
+      document.writeln("Operador && Verdadeiro <br>")
+    } else {
+      document.writeln("Operador && Falso <br>")
+    }
+
+    //true && true && false = false
+    if (2 == 2 && 3 >= 1 && "a" == "b") {
+      document.writeln("Operador && Verdadeiro <br>")
+    } else {
+      document.writeln("Operador && Falso <br>")
+    }
+
+    //true || false || false = true
+    if (2 == 2 || 3 >= 7 || "a" == "b") {
+      document.writeln("Operador || Verdadeiro <br>")
+    } else {
+      document.writeln("Operador || Falso <br>")
+    }
+
+    //false || false || false = false
+    if (2 == 5 || 3 >= 7 || "a" == "b") {
+      document.writeln("Operador || Verdadeiro <br>")
+    } else {
+      document.writeln("Operador || Falso <br>")
+    }
+
+    //false = true
+    if (!(4 == 2)) {
+      document.writeln("Operador ! Verdadeiro <br>")
+    } else {
+      document.writeln("Operador !  Falso <br>")
+    }
+
+    //true = false
+    if (!(5 >= 2)) {
+      document.writeln("Operador ! Verdadeiro <br>")
+    } else {
+      document.writeln("Operador !  Falso <br>")
+    }
+    */
+
+    var name = prompt("Nome do aluno:")
+    var media = prompt("Média do aluno:")
+    var faltas = prompt("Digite a quantidade de faltas:")
+
+    var Media = 7
+    var faltas_max = 15
+
+    if (media >= Media && faltas <= faltas_max) {
+      alert("O(A) aluno(a) " + name + " esta, Aprovado!")
+      alert("A média do(a) " + name + " é: " + media + "")
+      alert("O(A) " + name + " teve: " + faltas + " faltas")
+      //lógica 
+    } else {
+      alert("O(A) aluno(a) " + name + " esta, Reprovado!")
+      alert("A média do(a) " + name + " é: " + media + "")
+      alert("O(A) " + name + " teve: " + faltas + " faltas")
+      //lógica 
+    }
+
+    //Operador ternario
+    /*
+    var resultado = (media >= Media && faltas <= faltas_max) ? "Aprovado" : "Reprovado"
+    */
+  </script>
+</head>
+
+<body>
+  <h1 style="text-align: center; text-decoration: underline;">Operadores Lógicos</h1>
+  <h2>Pratica</h2>
+
+  <a href="/estudos/if_else/operadores_logicos.html">Voltar</a>
+</body>
+
+</html>
