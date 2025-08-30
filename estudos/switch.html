@@ -9,22 +9,23 @@
   <h1 style="text-align: center; text-decoration: underline;">Switch</h1>
 
   <h2>O que é comando switch?</h2>
-  <p>Em programação, a instrução switch é usada para executar diferentes blocos de código com base no valor de uma variável ou expressão, oferecendo uma alternativa ao uso prolongado de instruções <strong>if-else</strong>.</p>
+  <p>A instrução <strong>switch</strong> em JavaScript é uma alternativa concisa e eficiente para múltiplas instruções <strong>if...else if...else</strong> que verificam o mesmo valor. <br>Ela compara uma expressão com uma série de valores possíveis e executa o bloco de código correspondente ao valor que coincidir.</p>
 
+  <h3>A sintaxe básica de um bloco switch é a seguinte:</h3>
   <code>
     var opcao = 2 <br><br>
 
     switch (opcao) {<br>
     &nbsp;case 1:<br>
-        &nbsp;&nbsp;//trecho de código que sera executado<br>
+        &nbsp;&nbsp;// Bloco de código a ser executado se 'opcao' for igual a '1'<br>
         &nbsp;&nbsp;break<br><br>
 
       &nbsp;case 2:<br>
-        &nbsp;&nbsp;//techo de codigo que sera executado<br>
+        &nbsp;&nbsp;// Bloco de código a ser executado se 'opcao' for igual a '2'<br>
         &nbsp;&nbsp;break<br><br>
 
       &nbsp;default:<br>
-        &nbsp;&nbsp;//techo de codigo que sera executado<br>
+        &nbsp;&nbsp;// Bloco de código a ser executado se nenhum dos valores acima coincidir<br>
         &nbsp;&nbsp;break<br>
     }
   </code>

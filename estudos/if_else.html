@@ -11,22 +11,66 @@
   <h1 style="text-align: center; text-decoration: underline;">If e Else</h1>
 
   <p>
-    if (condição) { <br>
-    //trecho de codigo que sera executado <br><br>
-    } else { <br>
-    //trecho de codigo que sera executado <br><br>
-    }
+    Em JavaScript, a instrução if...else é uma das estruturas de controle de fluxo mais fundamentais. Ela permite que
+    você execute diferentes blocos de código dependendo de uma condição ser verdadeira (true) ou falsa (false).
+  </p>
 
-    <hr>
+  <ul>
+    <li>
+      <h3>if ...</h3>
+    </li>
+    <ul>
+      <li>A forma mais simples é a instrução <strong>if</strong>. Se a condição entre parênteses for verdadeira, o
+        código dentro das chaves ({}) será executado.</li>
+    </ul>
+    <li>
+      <h3>if ... else ...</h3>
+    </li>
+    <ul>
+      <li>A instrução <strong>if...else</strong> adiciona uma segunda opção. Se a condição no if for falsa, o código
+        dentro do bloco else será executado.</li>
+    </ul>
+    <li>
+      <h3>if ... else if ... else</h3>
+    </li>
+    <ul>
+      <li>Para testar várias condições, você pode usar a instrução <strong>else if</strong>. O JavaScript verificará
+        cada condição em ordem. Ele executará o bloco de código da primeira condição que for verdadeira e, em seguida,
+        pulará o restante da estrutura <strong>if...else if...else</strong>.</li>
+    </ul>
+  </ul>
 
+  <hr>
+
+  <h2>Exemplos:</h2>
+  <h3>if ...</h3>
+  <p>
     if (condição) { <br>
-    //trecho de codigo que sera executado <br><br>
-    } else if (condição) { <br>
-    //trecho de codigo que sera executado <br><br>
-    } else { <br>
-    //trecho de codigo que sera executado <br><br>
+    //trecho de codigo que sera executado caso condição seja verdadeira <br>
     }
   </p>
+
+  <h3>if ... else</h3>
+  <p>
+    if (condição) { <br>
+    //trecho de codigo que sera executado caso condição seja verdadeira <br><br>
+    } else { <br>
+    //trecho de codigo que sera executado caso condição seja falsa <br><br>
+    }
+  </p>
+
+  <h3>if ... else if ... else</h3>
+  <p>
+    if (condição) { <br>
+    //trecho de codigo que sera executado caso condição seja verdadeira <br><br>
+    } else if (condição) { <br>
+    //trecho de codigo que sera executado caso condição seja falsa <br><br>
+    } else { <br>
+    //trecho de codigo que sera executado se nenhum dos valores acima coincidir <br><br>
+    }
+  </p>
+
+  <hr>
 
   <ul>
     <li><a href="if_else/condicionais.html">Condicionais</a></li>

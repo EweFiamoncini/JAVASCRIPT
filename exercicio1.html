@@ -10,30 +10,45 @@
 <body>
   <h1 style="text-align: center; text-decoration: underline;">Identificador de Faixa Etária</h1>
   <p>
-    Aplicação capaz de identificar a faiza etária com base na informação dada pelo usuário.
+    Aplicação capaz de identificar a faixa etária com base na informação dada pelo usuário.
   </p>
+
+  <ul>
+    <li>
+      <h3>Faixas etárias:</h3>
+    </li>
+    <ul>
+      <li>Criança</li>
+      <li>Jovem</li>
+      <li>Adulto</li>
+      <li>Idoso</li>
+    </ul>
+  </ul>
+  <hr>
   <script>
 
     var name = prompt("Digite um nome:")
     var age = prompt("Digite uma idade:")
 
     if (age >= 0 == age < 15) {
-      alert("" + name + " tem " + age + " anos então ele(a) é uma criança.")
+      document.write("<br><br>" + name + " tem " + age + " anos então ele(a) é uma criança.")
     }
 
     if (age >= 15 == age < 30) {
-      alert("" + name + " tem " + age + " anos então ele(a) é um(a) jovem.")
+      document.write("<br><br>" + name + " tem " + age + " anos então ele(a) é um(a) jovem.")
     }
 
     if (age >= 30 == age < 60) {
-      alert("" + name + " tem " + age + " anos então ele(a) é um(a) adulto(a).")
+      document.write("<br><br>" + name + " tem " + age + " anos então ele(a) é um(a) adulto(a).")
     }
 
     if (age >= 60) {
-      alert("" + name + " tem " + age + " anos então ele(a) é um(a) idoso(a)!")
+      document.write("<br><br>" + name + " tem " + age + " anos então ele(a) é um(a) idoso(a)!")
     }
   </script>
 
+  <br>
+  <br>
   <a href="index.html">Voltar</a>
 </body>
 

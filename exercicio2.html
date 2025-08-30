@@ -10,8 +10,28 @@
 <body>
   <h1 style="text-align: center; text-decoration: underline;">Calculadora de IMC</h1>
   <p>
-    Aplicação capaz de efetuar o calculo de IMC(Indice de massa corporal) do usuário.
+    Aplicação capaz de efetuar o calculo de IMC(Indice de massa corporal) com as informações fornecidas pelo usuário.
   </p>
+
+  <ul>
+    <li>
+      <h3>Classificações do IMC:</h3>
+    </li>
+    <ul>
+      <li>Baixo peso muito grave!</li>
+      <li>Baixo peso grave!</li>
+      <li>Baixo peso!</li>
+      <li>Peso normal!</li>
+      <li>Sobre peso!</li>
+      <li>Obesidade grau I.</li>
+      <li>Obesidade grau II.</li>
+      <li>Obesidade grau III.</li>
+    </ul>
+  </ul>
+
+  <hr>
+
+  <h3>Resultado:</h3>
   <script>
 
     //Declarações de variaveis necessarias
@@ -59,7 +79,8 @@
       classificacao = "Obesidade grau III.";
     }
 
-    document.write(name + " possui índice de massa corporal igual a " + imc + ", sendo classificado como: " + classificacao);
+    document.write(name + " possui índice de massa corporal igual à: " + imc);
+    document.write("<br>" + name + " está sendo classificado com: " + classificacao)
 
   </script>
 

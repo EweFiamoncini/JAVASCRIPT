@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Switch - Prática</title>
+</head>
+
+<body>
+  <h1 style="text-align: center; text-decoration: underline;">Switch - Prática</h1>
+
   <script>
 
-    var parametro = prompt("Digite o numero 1 ou 2:")
+    var parametro = prompt("De 1 à 10, descubra qual o numero está declarado:")
 
     switch (parseInt(parametro)) {
-
-      case 1:
-        console.log("Você digitou o numero 1")
-        //se paremetro === 1
+      case 4:
+        document.write("Você digitou o numero 4 e acertou!")
+        //se paremetro === 4
         break
 
-      case 2:
-        console.log("Você digitou o numero 2")
-        //se parametro === 2
+      case 6:
+        document.write("Você digitou o numero 6 e acertou!")
+        //se parametro === 6
         break
 
       default:
-        console.log("Numero não declarado!")
-        //se parametro não encontrado
+        document.write("Numero não declarado! Você errou!")
+      //se parametro não encontrado
     }
 
   </script>
-</head>
-<body>
-  <h1 style="text-align: center; text-decoration: underline;">Switch - Prática</h1>
+
+  <br>
+  <br>
   <a href="../switch.html">Voltar</a>
 </body>
+
 </html>
