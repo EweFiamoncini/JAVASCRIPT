@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funções - Nativas</title>
+</head>
+
+<body>
+  <h1 style="text-align: center; text-decoration: underline;">Functions(Funções) - Nativas para manipular datas</h1>
+
+  <p>
+    O JavaScript tem um objeto nativo chamado <strong>Date</strong> que permite trabalhar com datas e horas. Ele é usado
+    para criar,
+    manipular e formatar informações de data e tempo.
+  </p>
+
+  <ul>
+    <li><strong>new Date()</strong>: Cria um objeto <strong>Date</strong> com a data e hora atuais.</li>
+    <li><strong>getDate()</strong>: Obtém o dia do mês (1-31).</li>
+    <li><strong>getMonth() + 1</strong>: Obtém o mês (0-11). <strong>Como ele retorna o mês começando do 0 precisamos
+        adicio + 1 após o comando!</strong></li>
+    <li><strong>getFullYear() + 1</strong>: Obtém o ano (4 dígitos).</li>
+  </ul>
+
+  <hr>
+
+  <h2>Exemplos Data:</h2>
+
+
+  <script>
+
+    var data = new Date()
+
+    document.write("Buscando data atual com data.getDate() = ", data.getDate())
+    document.write("<br><br>Buscando mes atual com data.getMonth() + 1 = ", data.getMonth() + 1)
+    document.write("<br><br>Buscando ano atual com data.getFullYear() = ", data.getFullYear())
+    document.write("<br><br>Data atual usando codigo: data.getDate(), '/', (data.getMonth() + 1), '/', data.getFullYear() = ", data.getDate(), "/", (data.getMonth() + 1), "/", data.getFullYear())
+
+
+  </script>
+
+  <br>
+  <br>
+  <a href="../funcoes.html">Voltar</a>
+</body>
+
+</html>
