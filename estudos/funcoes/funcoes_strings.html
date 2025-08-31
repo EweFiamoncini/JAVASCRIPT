@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funções - Nativas</title>
+</head>
+
+<body>
+  <h1 style="text-align: center; text-decoration: underline;">Functions(Funções) - Nativas para manipular strings</h1>
+
+  <p>
+    <strong>Funções nativas para manipular strings</strong> são incrivelmente úteis para formatar texto, buscar
+    informações, substituir caracteres e muito mais. Essas funções são métodos que você pode chamar diretamente em
+    qualquer string.
+  </p>
+  <ul>
+    <li>
+      <p><strong>length:</strong> retorna o <strong>número de elementos de uma sequência</strong>.</p>
+    </li>
+    <li>
+      <p><strong>charAt():</strong> retorna um <strong> caractere em um índice especificado</strong>
+        de uma string.</p>
+    </li>
+    <li>
+      <p><strong>indexOf():</strong> é usado para <strong>encontrar a posição da primeira ocorrência de um
+          valor</strong>
+        especificado dentro de uma string ou array.</p>
+    </li>
+    <li>
+      <p><strong>replace:</strong> é usado para <strong>substituir uma parte de uma string por outra</strong>. Ele
+        retorna uma nova
+        string sem modificar a string original.
+      </p>
+    </li>
+    <li>
+      <p><strong>substr:</strong> é usado para <strong>extrair uma parte de uma string</strong>. Começa
+        em um índice especificado e tem um comprimento determinado.
+      </p>
+    </li>
+    <li>
+      <p><strong>toLowerCase:</strong> é uma função de string que <strong>retorna uma nova string</strong> com todos os
+        caracteres convertidos para <strong>minúsculas</strong>.
+      </p>
+    </li>
+    <li>
+      <p><strong>toUpperCase:</strong> é uma função de string que <strong>retorna uma nova string</strong> com todos os
+        caracteres convertidos para <strong>maiúsculas</strong>.
+      </p>
+    </li>
+    <li>
+      <p><strong>trim:</strong> é uma função de string que <strong>remove os espaços em branco</strong> do início e do
+        fim de uma string. Ele retorna uma nova string sem esses espaços.
+      </p>
+    </li>
+  </ul>
+  <hr>
+
+  <h2>Exemplos:</h2>
+
+
+  <script>
+
+    //var name = prompt("Digite seu nome:")
+    var name = "Ewerton"
+    var textEspaces = " Testando Espaços "
+
+    //length
+    document.write("Usando length em: " + name + " = ")
+    document.write(name.length, "<br>")
+
+    //charAt
+    document.write("<br>Usando charAt(1) em: " + name + " = ")
+    document.write(name.charAt(1), "<br>")
+
+    //indexOf
+    document.write("<br>Usando indexOf('E') em: " + name + " = ")
+    document.write(name.indexOf("E"), "<br>")
+
+    //replace
+    document.write("<br>Usando replace(name, 'Substituição do seu nome!') em: " + name + " = ")
+    document.write(name.replace(name, "Substituição do seu nome!"), "<br>")
+
+    //substr
+    document.write("<br>Usando substr(0, 3) em: ", name," = ")
+    document.write(name.substr(0, 3), "<br>")
+
+    //toLowerCase
+    document.write("<br>Usando toLowerCase() em: ", name," = ")
+    document.write(name.toLowerCase(), "<br>")
+
+    //toUpperCase
+    document.write("<br>Usando toUpperCase() em: ", name," = ")
+    document.write(name.toUpperCase(), "<br>")
+
+    //trimOff
+    document.write("<br>Sem trim() = ")
+    document.write("-", textEspaces, "-")
+
+    //trimOn
+    document.write("<br>Com trim() = ")
+    document.write("-", textEspaces.trim(), "-")
+
+  </script>
+
+  <br>
+  <br>
+  <a href="../funcoes.html">Voltar</a>
+</body>
+
+</html>
