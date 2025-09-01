@@ -63,43 +63,43 @@
 
     document.write("<h3>Contagem de intervalo de Datas:</h3>")
 
-    //15/01/2017
-    var data1 = new Date(2017, 0, 15)
-
     //01/09/2025
-    var data2 = new Date(2025, 8, 1)
+    var data1 = new Date(2025, 8, 1)
 
-    document.write("Definindo data 15/01/2017 com var data1 = new Date(2017, 0, 15): ")
+    //Data Atual
+    var dataAtual = new Date()
+
+    document.write("Definindo data 01/09/2025 com var data1 = new Date(2025, 8, 1): ")
     document.write("<br>")
     document.write(data1.toString())
 
     document.write("<br>")
     document.write("<br>")
 
-    document.write("Definindo data 01/09/2025 com var data2 = new Date(2025, 8, 1): ")
+    document.write("Definindo data Atual com var dataAtual = new Date(): ")
     document.write("<br>")
-    document.write(data2.toString())
+    document.write(dataAtual.toString())
 
     document.write("<br>")
     document.write("<br>")
 
     document.write("Convertendo datas para algo que possamos calcular com get.Time(): ")
     document.write("<br>")
-    document.write("Data 1: 15/01/2017 = ", data1.getTime())
+    document.write("Data 1: 01/09/2025 = ", data1.getTime())
     document.write("<br>")
-    document.write("Data 2: 01/09/2025 = ", data2.getTime())
+    document.write("Data Atual : ", dataAtual.getDate(), " / ", dataAtual.getMonth() + 1, " / ", dataAtual.getFullYear(), " = ", dataAtual.getTime())
 
     document.write("<br>")
     document.write("<br>")
 
-    document.write("Diferença entre data1 e data2 = ")
-    document.write(data1.getTime() - data2.getTime())
+    document.write("Diferença entre data1 e dataAtual = ")
+    document.write(data1.getTime() - dataAtual.getTime())
 
     document.write("<br>")
     document.write("<br>")
 
-    var millisegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
-    document.write("Convertendo ", data1.getTime() - data2.getTime(), " para um valor positivo com: <br> Math.abs(data1.getTime() - data2.getTime()) = ", millisegundos_entre_datas)
+    var millisegundos_entre_datas = Math.abs(data1.getTime() - dataAtual.getTime())
+    document.write("Convertendo ", data1.getTime() - dataAtual.getTime(), " para um valor positivo com: <br> Math.abs(data1.getTime() - dataAtual.getTime()) = ", millisegundos_entre_datas)
 
     document.write("<br>")
     document.write("<br>")
@@ -119,7 +119,7 @@
     document.write("<br>")
     document.write("<br>")
 
-    document.write("A quantidade de dias no intervalo de : <br>", data1, " <br> e <br>", data2, " <br> é = ", millisegundos_entre_datas / millisegundos_por_dia, " Dias, para arredondar usamos o Math.ceil = ", Math.ceil(millisegundos_entre_datas / millisegundos_por_dia), " Dias")
+    document.write("A quantidade de dias no intervalo de : <br>", data1, " <br> e <br>", dataAtual, " <br> é = ", millisegundos_entre_datas / millisegundos_por_dia, " Dias, para arredondar usamos o Math.ceil = ", Math.round(millisegundos_entre_datas / millisegundos_por_dia), " Dias")
 
   </script>
 
