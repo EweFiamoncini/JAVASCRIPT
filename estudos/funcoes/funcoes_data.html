@@ -22,12 +22,16 @@
     <li><strong>getMonth() + 1</strong>: Obtém o mês (0-11). <strong>Como ele retorna o mês começando do 0 precisamos
         adicionar + 1 após o comando!</strong></li>
     <li><strong>getFullYear() + 1</strong>: Obtém o ano (4 dígitos).</li>
+    <li><strong>toString()</strong>: Converte a data em uma string legível, incluindo o fuso horário.</li>
+    <li><strong>setDate()</strong>: É um método do objeto <strong>Date</strong> em JavaScript usado para <strong>definir
+        o dia do mês de uma data</strong>. Ele aceita um único argumento: um número inteiro entre 1 e 31.</li>
   </ul>
 
   <hr>
 
-  <h2>Exemplos Data:</h2>
+  <h2>Exemplos:</h2>
 
+  <h3>Data:</h3>
 
   <script>
 
@@ -38,6 +42,84 @@
     document.write("<br><br>Buscando ano atual com data.getFullYear() = ", data.getFullYear())
     document.write("<br><br>Data atual usando codigo: data.getDate(), '/', (data.getMonth() + 1), '/', data.getFullYear() = ", data.getDate(), "/", (data.getMonth() + 1), "/", data.getFullYear())
 
+    //Adicionar/Removar Dias
+    document.write("<h3>Adiconar/Remover Dias:</h3>")
+    document.write("Usando toString() na data: ", data.toString())
+    data.setDate(data.getDate() + 1)
+    document.write("<br><br>Usando data.setDate(data.getDate() + 1) na data: ", data.toString())
+
+    //Adicionar/Removar Meses
+    document.write("<h3>Adicionar/Remover Meses:</h3>")
+    document.write("Usando toString() na data: ", data.toString())
+    data.setMonth(data.getMonth() + 1)
+    document.write("<br><br>Usando data.setMonth(data.getMonth() + 1) na data: ", data.toString())
+
+    //Adicionar/Removar Anos
+    document.write("<h3>Adicionar/Remover Anos:</h3>")
+    document.write("Usando toString() na data: ", data.toString())
+    data.setFullYear(data.getFullYear() + 1)
+    document.write("<br><br>Usando data.setFullYear(data.getFullYear() + 1) na data: ", data.toString())
+
+
+    document.write("<h3>Contagem de intervalo de Datas:</h3>")
+
+    //15/01/2017
+    var data1 = new Date(2017, 0, 15)
+
+    //01/09/2025
+    var data2 = new Date(2025, 8, 1)
+
+    document.write("Definindo data 15/01/2017 com var data1 = new Date(2017, 0, 15): ")
+    document.write("<br>")
+    document.write(data1.toString())
+
+    document.write("<br>")
+    document.write("<br>")
+
+    document.write("Definindo data 01/09/2025 com var data2 = new Date(2025, 8, 1): ")
+    document.write("<br>")
+    document.write(data2.toString())
+
+    document.write("<br>")
+    document.write("<br>")
+
+    document.write("Convertendo datas para algo que possamos calcular com get.Time(): ")
+    document.write("<br>")
+    document.write("Data 1: 15/01/2017 = ", data1.getTime())
+    document.write("<br>")
+    document.write("Data 2: 01/09/2025 = ", data2.getTime())
+
+    document.write("<br>")
+    document.write("<br>")
+
+    document.write("Diferença entre data1 e data2 = ")
+    document.write(data1.getTime() - data2.getTime())
+
+    document.write("<br>")
+    document.write("<br>")
+
+    var millisegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+    document.write("Convertendo ", data1.getTime() - data2.getTime(), " para um valor positivo com: <br> Math.abs(data1.getTime() - data2.getTime()) = ", millisegundos_entre_datas)
+
+    document.write("<br>")
+    document.write("<br>")
+
+    document.write("Sabemos que: <br> 1 dia tem 24h <br> 1h tem 60min <br> 1min tem 60s <br> 1s tem 1000 milisesegundos")
+
+    document.write("<br>")
+    document.write("<br>")
+
+    document.write("Então, quantos milissegundos tem em 1 dia:")
+
+
+    document.write("<br>")
+    var millisegundos_por_dia = (1 * 24 * 60 * 60 * 1000)
+    document.write("Para calcular usamos, (1*24*60*60*1000) então, 1 dia tem: ", millisegundos_por_dia, " milissegundos")
+    
+    document.write("<br>")
+    document.write("<br>")
+
+    document.write("A quantidade de dias no intervalo de : <br>", data1, " <br> e <br>", data2, " <br> é = ", millisegundos_entre_datas / millisegundos_por_dia, " Dias, para arredondar usamos o Math.ceil = ", Math.ceil(millisegundos_entre_datas / millisegundos_por_dia), " Dias")
 
   </script>
 
