@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos - Janela(frame)</title>
+  <script>
+    function acao1() {
+      alert("Evento disparado!")
+    }
+  </script>
+</head>
+
+<body onscroll="console.log('Evento onscroll disparado!')" onresize="console.log('Evento onresize disparado!')">
+  <h1 style="text-align: center; text-decoration: underline;">Eventos - Janela(frame)</h1>
+
+  <p>
+    Em JavaScript, os eventos de janela são uma parte crucial para <strong>criar páginas interativas e dinâmicas</strong>. Eles permitem que você execute código em resposta a ações que acontecem na janela do navegador ou em todo o documento, em vez de em um elemento específico.
+  </p>
+
+  <ul>
+    <li><strong>onresize</strong>: Disparado quando a janela do navegador é redimensionada pelo usuário.</li>
+    <ul>
+      <li>Evento disparado no console!</li>
+    </ul>
+    <li><strong>onscroll</strong>: Disparado sempre que o usuário rola a janela.</li>
+    <ul>
+      <li><div style="height: 3000px; width: 200px; background-color: #ccc;">Evento disparado no console!</div></li>
+    </ul>
+  </ul>
+
+  <br>
+  <br>
+  <a href="../eventos.html">Voltar</a>
+</body>
+
+</html>

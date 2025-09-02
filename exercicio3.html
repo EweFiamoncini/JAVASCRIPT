@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <h1 style="text-align: center; text-decoration: underline;">Calculadora de Soma e Subtração</h1>
+  <p>
+    Aplicação para efetuar cálculo aritméticos de soma e subtração.
+  </p>
+
+  <hr>
+
+  <h3>Resultado:</h3>
+  <script>
+
+    var num1 = prompt("Digite um numero: ")
+    var operacao = prompt("Você deseja, Somar ou Subtrair?")
+    var num2 = prompt("Digite um numero: ")
+
+    function calc(num1, num2, operacao) {
+    
+      num1 = parseFloat(num1)
+      num2 = parseFloat(num2)
+
+      var resultado = 0
+
+      if(operacao == "somar") {
+        resultado = num1 + num2
+      } else if(operacao == "subtrair") {
+        resultado = num1 - num2
+      } else {
+        alert("Error: Operação não definida, peça somente calculo de soma ou subtração!")
+      }
+
+      return resultado
+    }
+
+    document.write("Valor digitado: ", num1, " ", operacao, " ", num2)
+    document.write("<br>")
+    document.write("O resultado é: ", calc(num1, num2, operacao))
+
+  </script>
+
+  <br>
+  <br>
+  <a href="index.html">Voltar</a>
+</body>
+
+</html>
