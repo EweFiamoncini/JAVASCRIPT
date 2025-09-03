@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><strong>DOM API</strong></title>
+</head>
+
+<body>
+  <h1 style="text-align: center; text-decoration: underline;">DOM API - Seleção de elementos</h1>
+
+  <p>
+    A API do DOM nos dá diferentes métodos no objeto global document para encontrar elementos na sua página HTML. A
+    escolha do método depende de como você quer selecionar o elemento: <strong>por ID, por classe, pela tag, ou usando
+      um seletor CSS mais complexo</strong>.
+  </p>
+
+  <ul>
+    <li><strong>document.getElementById('id-do-elemento')</strong>: Se você quer pegar um elemento único, use o id. É o
+      método mais rápido e direto, porque cada id em uma página deve ser exclusivo.</li>
+    <br>
+    <li><strong>document.getElementsByTagName('sua-tag')</strong>: Se você quer encontrar todos os elementos de uma tag
+      específica, como <strong>div, p ou a</strong>.</li>
+    <br>
+    <li><strong>document.getElementsByClassName('nome-da-classe')</strong>: Para selecionar um ou mais elementos que
+      compartilham a mesma classe CSS.</li>
+    <br>
+    <li><strong>document.querySelector('seletor-css')</strong>: Retorna o primeiro elemento que corresponder ao seletor.
+    </li>
+    <br>
+    <li><strong>document.querySelectorAll('seletor-css')</strong>: Retorna todos os elementos que correspondem ao
+      seletor, em uma lista que pode ser iterada (chamada NodeList).</li>
+  </ul>
+
+  <h3>Qual Usar?</h3>
+
+  <ul>
+    <li>Use <strong>getElementById()</strong> para seleções rápidas e garantidas de <strong>um único elemento</strong>.
+    </li>
+    <li>Use <strong>querySelectorAll()</strong> na maioria dos casos, especialmente quando precisar de flexibilidade.
+      Ele é o método mais versátil e moderno.</li>
+    <ul>
+      <li>Use <strong>querySelector()</strong> se você só precisar do primeiro elemento.</li>
+    </ul>
+  </ul>
+
+  <hr>
+
+  <input type="text" placeholder="Digite seu nome" id="nome_usuario" class="campo_texto" name="nome">
+
+  <h3>Resultados:</h3>
+  <script>
+    document.write("<strong>document.getElementById('nome_usuario')</strong> = ", document.getElementById('nome_usuario'))
+    document.write("<br><strong>document.getElementsByTagName('input')</strong> = ", document.getElementsByTagName('input'))
+    document.write("<br><strong>document.getElementsByName('nome')</strong> = ", document.getElementsByName('nome'))
+  </script>
+  <br>
+  <small style="color: red;">*Para mais resultados no console*</small>
+  <script>
+    console.log(document.getElementById('nome_usuario'))
+    console.log(document.getElementsByTagName('input'))
+    console.log(document.getElementsByName('nome'))
+  </script>
+  <br>
+  <br>
+  <a href="../DOM.html">Voltar</a>
+</body>
+
+</html>
