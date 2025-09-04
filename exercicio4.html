@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle Input</title>
+  
+  <script>
+    function acionaCampo() {
+      document.getElementById("campoTexto").style.background = "yellow"
+    }
+
+    function validaCampo() {
+      var valorCampo = document.getElementById("campoTexto").value
+
+      if(valorCampo.length < 3 ){
+        document.getElementById("campoTexto").style.background = "red"
+      } else {
+        document.getElementById("campoTexto").style.background = "green"
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h1 style="text-align: center; text-decoration: underline;">Controle de Input</h1>
+  <p>
+    Criar um campo <strong>input type="text"</strong> e aplique os seguintes controles com base nos
+    eventos abaixo:
+    <br>
+    <br>
+  <ul>
+    <li>No evento de foco modifique o background do input para amarelo.</li>
+    <li>Quando o campo perder o foco, recupere o seu respectivo valor e:
+      <ul>
+        <li>Caso o conteúdo contido no campo tenha menos de 3 caracteres o mesmo
+          deve ter seu background alterado para vermelho.</li>
+        <li>Caso o conteúdo contido no campo tenha 3 caracteres ou mais o background
+          deve ser alterado para verde.</li>
+      </ul>
+    </li>
+  </ul>
+  </p>
+
+  <hr>
+
+  <h3>Resultado:</h3>
+
+  <p>Ao clicar no input ira difinir um background yellow, ao clicar fora ira ficar vermelho caso nao tenha 3 ou mais caracteres dentro do input, se tiver 3 ou mais caracteres dentro do input e clicar fora do input o mesmo ira ficar verde!</p>
+
+  <input id="campoTexto" type="text" onfocus="acionaCampo()" onblur="validaCampo()" placeholder="Digite 3 caracteres ou mais!">
+
+  <br>
+  <br>
+  <a href="index.html">Voltar</a>
+</body>
+
+</html>

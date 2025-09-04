@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM API</title>
+  <script>
+
+    function modificaEstilo(corDeFundo, l, a) {
+      document.getElementById("quadrado").style.background = corDeFundo
+      document.getElementById("quadrado").style.width = l
+      document.getElementById("quadrado").style.height = a
+    }
+
+  </script>
+</head>
+
+<body>
+  <h1 style="text-align: center; text-decoration: underline;">DOM API - Manipulando estilos de elementos</h1>
+
+  <p>
+    A manipulação de estilos de elementos HTML com JavaScript é uma tarefa fundamental para criar páginas dinâmicas e
+    interativas. <br>Você pode fazer isso de duas maneiras principais: acessando a propriedade style do elemento ou
+    manipulando as classes CSS.
+  </p>
+
+  <hr>
+
+  <h3>Teste:</h3>
+
+  <button type="button" onclick="modificaEstilo('#ff0000', '100px', '100px')" id="vermelho">Vermelho</button>
+  <button type="button" onclick="modificaEstilo('#00ff00', '150px', '150px')" id="verde">Verde</button>
+  <button type="button" onclick="modificaEstilo('#0000ff', '200px', '200px')" id="azul">Azul</button>
+
+  <br>
+  <br>
+
+  <div style="border: solid 1px black; width: 100px; height: 100px;" id="quadrado"></div>
+
+  <br>
+  <br>
+  <a href="../DOM.html">Voltar</a>
+</body>
+
+</html>
