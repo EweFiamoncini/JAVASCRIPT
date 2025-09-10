@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array - Multidimensional</title>
+</head>
+
+<body>
+  <h1 style="text-align: center; text-decoration: underline;">Array - Multidimensional</h1>
+
+  <h3>O que é um Array Multidimensional?</h3>
+  
+  <p>
+    Arrays multidimensionais são arrays que contêm outros arrays, ou seja, são "arrays de arrays". A forma mais comum é
+    o array bidimensional, que pode ser visualizado como uma grade ou uma tabela com linhas e colunas.
+  </p>
+
+  <hr>
+
+  <h3>Criando um Array Multidimensional:</h3>
+  
+  <p>Para criar um array Multidimensional, você simplesmente aninha arrays dentro de um array principal.</p>
+  
+  <code>
+    var lista_coisas = Array() <br>
+    lista_coisas["numeros"] = Array(10, 20, 30, 40, 50) <br>
+    lista_coisas["string"] = Array("Rio de Janeiro", "São Paulo", "Santa Catarina") <br>
+    lista_coisas["misto"] = Array("Ewerton", 25, true, "Santa Catarina") <br>
+    <br>
+    console.log(lista_coisas) <br>
+    <br>
+  </code>
+  
+  <small style="color: red;">*Resultado no Console (F12)*</small>
+
+  <script>
+    var lista_coisas = Array()
+    lista_coisas["numeros"] = Array(10, 20, 30, 40, 50)
+    lista_coisas["string"] = Array("Rio de Janeiro", "São Paulo", "Santa Catarina")
+    lista_coisas["misto"] = Array("Ewerton", 25, true, "Santa Catarina")
+
+    console.log(lista_coisas)
+  </script>
+
+  <br>
+  <br>
+  
+  <a href="../array.html">Voltar</a>
+
+</body>
+
+</html>
