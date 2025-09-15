@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array - Ordenação</title>
+</head>
+
+<body>
+  <h1 style="text-align: center; text-decoration: underline;">Array - Ordenação</h1>
+
+  <h3>Ordenando Strings e Números (padrão)</h3>
+  <p>
+    Por padrão, o método <strong>sort()</strong> converte os elementos para string e os ordena de acordo com a ordem
+    alfabetica. <br>
+    Isso funciona bem para strings, mas pode levar a resultados inesperados com números.
+  </p>
+
+  <h3>Código:</h3>
+
+  <code>
+    var lista_pessoas = Array("Caio" , "Joao", "Lucas", "Ewerton") <br>
+    <br>
+    console.log(lista_pessoas.indexOf("Lucas")) <br>
+    <br>
+  </code>
+
+  <small style="color: red;">*Resultado no Console (F12)*</small>
+  <script>
+    var lista_pessoas = Array("Caio", "Joao", "Lucas", "Ewerton")
+
+    console.log(lista_pessoas)
+    console.log(lista_pessoas.sort())
+
+    var numeros = Array(1, 20, 25, 2, 4, 7, 19)
+
+    console.log(numeros)
+    console.log(numeros.sort())
+    console.log(numeros.sort(ordena_numeros))
+
+    //padrão para metodo sort() para ordenar valores numericos 
+    //declarados em string ou numeros
+    function ordena_numeros(a, b) {
+      return a - b
+      // < 0 = a ordenado antes de b
+      // > 0 = b ordenado antes de a
+      // == a ordem é mantida
+    }
+
+
+  </script>
+
+  <br>
+  <br>
+  <a href="../array.html">Voltar</a>
+
+</body>
+
+</html>

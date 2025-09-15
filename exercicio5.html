@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle Input 2</title>
+
+  <script>
+
+  </script>
+</head>
+
+<body>
+  <h1 style="text-align: center; text-decoration: underline;">Controle de Input 2</h1>
+  <p>
+    Criar uma aplicação web contendo um campo para entrada de texto (input text) e dois botões (buttons), sendo um botão
+    com a descrição "Adicionar" e outro com a descrição "Ordenar".
+    <br> <br>
+    Após criar os elementos de interação com o usuário acima, crie um Array de nome objetos contendo
+    os seguintes valores:
+    <br>
+    <code style="color: blue;">
+    var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+    </code>
+    <br>
+  <ol type="I">
+    <li>Ao clicar no botão <strong>"Adicionar"</strong> disparar função que irá:</li>
+    <ul>
+      <li>Verificar se o valor está vazio ou preenchido.</li>
+      <ul>
+        <li>Se vazio, exibir alert com a mensagem "Informe um valor válido".
+        </li>
+        <li><strong>Se preenchido</strong>:</li>
+        <ul>
+          <li>Verificar se o valor informado já existe dentro do Array objetos.</li>
+          <li>Se existir, exibir alert com a mensagem "Objeto já foi adicionado".</li>
+          <li><strong>Se não existir</strong>:</li>
+          <ul>
+            <li>Incluir o valor preenchido no campo dentro do Array.</li>
+            <li>Efetuar um console.log do Array para debug (checar se está
+              funcionado).
+            </li>
+            <li>Limpar o valor contido no campo de entrada de texto.
+            </li>
+          </ul>
+        </ul>
+      </ul>
+    </ul>
+    </li>
+    <br>
+    <li>Ao clicar no botão <strong>"Ordenar"</strong> disparar função que irá:</li>
+    <ul>
+      <li>Ordenar de forma alfabética os valores do Array de objetos.</li>
+      <li>Efetuar um console.log do Array para debug (checar se está funcionado).</li>
+    </ul>
+  </ol>
+  </p>
+
+  <hr>
+
+  <h3>Resultado:</h3>
+
+  <input id="objeto" type="text" placeholder="Digite um objeto! Ex:Cadeira">
+  <button onclick="adicionarObjetos()">Adicionar</button>
+  <button onclick="ordenarObjetos()">Ordenar</button>
+
+  <script>
+
+    var objetos = Array("Cadeira", "Impressora", "Garfo")
+
+    function adicionarObjetos() {
+      var objeto = document.getElementById("objeto").value
+      
+      if(objeto != "") {
+        if(objetos.indexOf(objeto) !== -1){
+          alert("Objeto já foi adicionado!")
+        } else {
+          objetos.push(objeto)
+          console.log(objetos)
+          
+          document.getElementById("objeto").value = ""
+        } 
+      } else {
+        alert("Informe um objeto válido!")
+      }
+    }
+
+    function ordenarObjetos() {
+      objetos.sort()
+
+      console.log(objetos)
+    }
+  </script>
+
+  <br>
+  <br>
+  <a href="index.html">Voltar</a>
+</body>
+
+</html>
